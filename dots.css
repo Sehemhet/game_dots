@@ -1,0 +1,53 @@
+.level_beginner {
+    gap:16px;
+    width:300px;
+    height:300px;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+}
+.wrap_dot_beginner {
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    overflow:hidden;
+}
+
+.level_medium {
+    gap:16px;
+    width:340px;
+    height:340px;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+}
+.wrap_dot_medium {
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    overflow:hidden;
+}
+
+.level_hard {
+    gap:16px;
+    width:380px;
+    height:380px;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+}
+.wrap_dot_hard {
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    overflow:hidden;
+}
+
+.tabs__block {
+    display:none;
+}
+.active-tab {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}

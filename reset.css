@@ -1,0 +1,173 @@
+* {
+    font-family:'Asap';
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: normal;
+    color: inherit;
+    text-transform: none;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+:root {
+    --c1:#2E2E2E;       /* "black"      chapter             white       theme   */
+    --c2:#939393;       /* "grey"       text                white/black theme   */
+    --c3:#F6F6F6;       /* "grey light" background          white       theme   */
+    --c4:#E5E5E5;       /* "grey mid"   border              white       theme   */
+    --c5:#FFFFFF;       /* "white"      wallpaper           white       theme   */
+    --c6:#19AEFF;       /* "blue"       link                white/black theme   */
+    --c7:#004970;       /* "blue"       border              black       theme   */
+    --c8:#001C2B;       /* "blue mid"   background          black       theme   */
+    --c9:#000D13;       /* "blue dark"  wallpaper           black       theme   */
+
+    /* для точек */
+    --d_red_1:#DF6868;      /* красная      */
+    --d_red_2:#FFC8C8;      /* красная      */
+    --d_green_1:#5E8657;    /* зеленая      */
+    --d_green_2:#D3FACC;    /* зеленая      */
+    --d_yellow_1:#ECB74F;   /* желтая       */
+    --d_yellow_2:#FFF5E1;   /* желтая       */
+    --d_blue_1:#C3EBFF;     /* синяя        */
+    --d_blue_2:#5AA1D4;     /* синяя        */
+    --d_purple_1:#785098;   /* фиолетовая   */
+    --d_purple_2:#F8EEFF;   /* фиолетовая   */
+}
+
+/* цвета точек */
+.d_red {background: linear-gradient(to right, var(--d_red_1), var(--d_red_2));}
+.d_green {background: linear-gradient(to right, var(--d_green_1), var(--d_green_2));}
+.d_yellow {background: linear-gradient(to right, var(--d_yellow_1), var(--d_yellow_2));}
+.d_blue {background: linear-gradient(to right, var(--d_blue_1), var(--d_blue_2));}
+.d_purple {background: linear-gradient(to right, var(--d_purple_1), var(--d_purple_2));}
+
+
+p {font-size:14px;}
+h3 {font-size:12px;}
+h2 {font-size:24px;}
+input {font-size:16px; border:none;}
+.fs16 {font-size:16px;}
+
+.c6 {color:var(--c6);}
+
+.parent {
+    height:100vh;
+}
+
+._br32 {border-radius:32px;}
+
+.pad4 {padding:4px;}
+.pad4l {padding-left:4px;}
+.pad4r {padding-right:4px;}
+
+.pad8l {padding-left:8px;}
+.pad8r {padding-right:8px;}
+.pad8t {padding-top:8px;}
+.pad8b {padding-bottom:8px;}
+
+.pad16 {padding:16px;}
+.pad16r {padding-right:16px;}
+.pad16l {padding-left:16px;}
+
+.pad32 {padding:32px;}
+.pad32t {padding-top:32px;}
+.pad32b {padding-bottom:32px;}
+.pad32l {padding-left:32px;}
+
+
+
+.f {display:-webkit-box;display:-ms-flexbox;display:flex;}
+.fc {-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;}
+.fac {-webkit-box-align:center;-ms-flex-align:center;align-items:center;}
+.f_f {-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;}
+._f_ {-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;}
+.fw {-ms-flex-wrap:wrap;flex-wrap:wrap;}
+
+.gap4 {gap:4px;}
+.gap8 {gap:8px;}
+.gap16 {gap:16px;}
+.gap32 {gap:32px;}
+
+.w {width:100%;}
+.w_16 {width:16px;}
+.w_48 {width:48px;}
+.h {height:100%;}
+.h_304 {height:304px;}
+.h_96 {height:96px;}
+
+.f_auto {flex:1 1 auto}
+.f_336_01 {flex:0 1 336px}
+
+img {width:100%;height:100%;object-fit:contain;}
+
+._b_b_grey {border-bottom: 1px solid var(--c4);}
+._b_b_blue {border-bottom: 1px solid var(--c6);}
+
+.fw600 {font-weight:600;}
+p,span,input,a,ol,.small {
+    font-weight:400;
+    color:var(--c2);
+}
+
+button {
+    border: none;
+    all: initial;
+}
+button:hover {
+    cursor: pointer;
+}
+
+
+/* светлая тема */
+.white_theme {background:var(--c5);}
+.white_theme .wallpaper {background:var(--c3);}
+.white_theme ._b_all {border:1px solid var(--c4);}
+.white_theme .background {background:var(--c5);}
+
+.white_theme h1,
+.white_theme h2,
+.white_theme h3,
+.white_theme .BIG {
+    font-weight:600;
+    color:var(--c1);
+}
+
+/* темная тема */
+.black_theme {background:var(--c9);}
+.black_theme .wallpaper {background:var(--c8);}
+.black_theme ._b_all {border:1px solid var(--c7);}
+.black_theme .background {background:var(--c9);}
+
+.black_theme h1,
+.black_theme h2,
+.black_theme h3,
+.black_theme .BIG {
+    font-weight:600;
+    color:var(--c5);
+}
+
+#level_form button {
+    font-weight:300;
+}
+
+#level_form button:hover {
+    font-weight:600;
+}
+#level_form button:active {
+    background:var(--c6);
+    color:var(--c5);
+    font-weight:600;
+}
+.level_active {
+    background:var(--c6);
+    color:var(--c5) !important;
+    font-weight:600;
+}
+
+.NONE {
+    display:none !important;
+}
+
+/*
+* {
+    border:1px solid green;
+}

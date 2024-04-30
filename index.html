@@ -1,0 +1,804 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="parent white_theme pad16 f fc f_f">
+    <!-- header -->
+    <div class="f f_f pad16 wallpaper fac _br32 w">
+        <div class="w_48 f fac _f_">
+            <img src="logo.svg" alt="">
+        </div>
+        <div class="f fac gap32">
+
+            <div>
+                <span class="fs16">Game Rating</span>
+                <!--вывод рейтинга/ рейтинг/очки/счет-->
+                <span class="BIG fs16">0.00</span>
+            </div>
+            <!--переключатель-->
+            <div class="switch_box">
+                <input type="checkbox" class="switch" id="theme_switch">
+            </div>
+            <!--Никнейм-->
+            <div>
+                <span class="BIG fs16">@nickname</span>
+            </div>
+            <!--Добавить возможность РАЗЛОГИНИТЬСЯ при переходе на страницу login.html-->
+            <div>
+                <a href="login.html">
+                    <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#939393" stroke="#939393"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>entrance_line</title> <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="System" transform="translate(-672.000000, -96.000000)" fill-rule="nonzero"> <g id="entrance_line" transform="translate(672.000000, 96.000000)"> <path d="M24,0 L24,24 L0,24 L0,0 L24,0 Z M12.5934901,23.257841 L12.5819402,23.2595131 L12.5108777,23.2950439 L12.4918791,23.2987469 L12.4918791,23.2987469 L12.4767152,23.2950439 L12.4056548,23.2595131 C12.3958229,23.2563662 12.3870493,23.2590235 12.3821421,23.2649074 L12.3780323,23.275831 L12.360941,23.7031097 L12.3658947,23.7234994 L12.3769048,23.7357139 L12.4804777,23.8096931 L12.4953491,23.8136134 L12.4953491,23.8136134 L12.5071152,23.8096931 L12.6106902,23.7357139 L12.6232938,23.7196733 L12.6232938,23.7196733 L12.6266527,23.7031097 L12.609561,23.275831 C12.6075724,23.2657013 12.6010112,23.2592993 12.5934901,23.257841 L12.5934901,23.257841 Z M12.8583906,23.1452862 L12.8445485,23.1473072 L12.6598443,23.2396597 L12.6498822,23.2499052 L12.6498822,23.2499052 L12.6471943,23.2611114 L12.6650943,23.6906389 L12.6699349,23.7034178 L12.6699349,23.7034178 L12.678386,23.7104931 L12.8793402,23.8032389 C12.8914285,23.8068999 12.9022333,23.8029875 12.9078286,23.7952264 L12.9118235,23.7811639 L12.8776777,23.1665331 C12.8752882,23.1545897 12.8674102,23.1470016 12.8583906,23.1452862 L12.8583906,23.1452862 Z M12.1430473,23.1473072 C12.1332178,23.1423925 12.1221763,23.1452606 12.1156365,23.1525954 L12.1099173,23.1665331 L12.0757714,23.7811639 C12.0751323,23.7926639 12.0828099,23.8018602 12.0926481,23.8045676 L12.108256,23.8032389 L12.3092106,23.7104931 L12.3186497,23.7024347 L12.3186497,23.7024347 L12.3225043,23.6906389 L12.340401,23.2611114 L12.337245,23.2485176 L12.337245,23.2485176 L12.3277531,23.2396597 L12.1430473,23.1473072 Z" id="MingCute" fill-rule="nonzero"> </path> <path d="M12,3 C12.5523,3 13,3.44772 13,4 C13,4.51283143 12.613973,4.93550653 12.1166239,4.9932722 L12,5 L7,5 C6.48716857,5 6.06449347,5.38604429 6.0067278,5.88337975 L6,6 L6,18 C6,18.51285 6.38604429,18.9355092 6.88337975,18.9932725 L7,19 L11.5,19 C12.0523,19 12.5,19.4477 12.5,20 C12.5,20.51285 12.113973,20.9355092 11.6166239,20.9932725 L11.5,21 L7,21 C5.40232321,21 4.09633941,19.7511226 4.00509271,18.1762773 L4,18 L4,6 C4,4.40232321 5.24892392,3.09633941 6.82372764,3.00509271 L7,3 L12,3 Z M17.707,8.46447 L20.5355,11.2929 C20.926,11.6834 20.926,12.3166 20.5355,12.7071 L17.707,15.5355 C17.3165,15.9261 16.6834,15.9261 16.2928,15.5355 C15.9023,15.145 15.9023,14.5118 16.2928,14.1213 L17.4142,13 L12,13 C11.4477,13 11,12.5523 11,12 C11,11.4477 11.4477,11 12,11 L17.4142,11 L16.2928,9.87868 C15.9023,9.48816 15.9023,8.85499 16.2928,8.46447 C16.6834,8.07394 17.3165,8.07394 17.707,8.46447 Z" id="形状" fill="#939393"> </path> </g> </g> </g> </g></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- end header -->
+
+    <!--body-->
+    <div class="f f_f pad16 wallpaper fac _br32 w gap8 h">
+        <!--левая колонка игра / топ игроки-->
+        <div class="f fc f_f gap8 f_auto h">
+            <!--игра-->
+            <div class="f fc gap8 f_f _br32 pad16 w background f_auto _b_all">
+                <!--уровень сложности / сложность / level-->
+                <div class="w">
+                    <div id="level_form" class="f fac gap8 _f_">
+                        <button type="submit" onclick="showTab('tab_1', this)" class="fs16 pad8t pad8b pad16l pad16r _br32 BIG">Beginner</button>
+                        <button type="submit" onclick="showTab('tab_2', this)" class="fs16 pad8t pad8b pad16l pad16r _br32 BIG">Medium</button>
+                        <button type="submit" onclick="showTab('tab_3', this)" class="fs16 pad8t pad8b pad16l pad16r _br32 BIG">Hard</button>
+                    </div>
+                </div>
+                <!--игра-->
+                <div class="w f_auto h">
+                    <div class="f fac _f_ h">
+                        <div id="tab_1" class="level_beginner tabs__block">
+                            <div id="a1" class="wrap_dot_beginner">
+                                <div class="d_red h w">
+
+                                </div>
+                            </div>
+                            <div id="a2" class="wrap_dot_beginner">
+                                <div class="d_red h w">
+
+                                </div>
+                            </div>
+                            <div id="a3" class="wrap_dot_beginner">
+                                <div class="d_green h w">
+
+                                </div>
+                            </div>
+                            <div id="a4" class="wrap_dot_beginner">
+                                <div class="d_yellow h w">
+
+                                </div>
+                            </div>
+                            <div id="b1" class="wrap_dot_beginner">
+                                <div class="d_green h w">
+
+                                </div>
+                            </div>
+                            <div id="b2" class="wrap_dot_beginner">
+                                <div class="d_purple h w">
+
+                                </div>
+                            </div>
+                            <div id="b3" class="wrap_dot_beginner">
+                                <div class="d_yellow h w">
+
+                                </div>
+                            </div>
+                            <div id="b4" class="wrap_dot_beginner">
+                                <div class="d_blue h w">
+
+                                </div>
+                            </div>
+                            <div id="c1" class="wrap_dot_beginner">
+                                <div class="d_purple h w">
+
+                                </div>
+                            </div>
+                            <div id="c2" class="wrap_dot_beginner">
+                                <div class="d_blue h w">
+
+                                </div>
+                            </div>
+                            <div id="c3" class="wrap_dot_beginner">
+                                <div class="d_red h w">
+
+                                </div>
+                            </div>
+                            <div id="c4" class="wrap_dot_beginner">
+                                <div class="d_purple h w">
+
+                                </div>
+                            </div>
+                            <div id="d1" class="wrap_dot_beginner">
+                                <div class="d_red h w">
+
+                                </div>
+                            </div>
+                            <div id="d2" class="wrap_dot_beginner">
+                                <div class="d_red h w">
+
+                                </div>
+                            </div>
+                            <div id="d3" class="wrap_dot_beginner">
+                                <div class="d_blue h w">
+
+                                </div>
+                            </div>
+                            <div id="d4" class="wrap_dot_beginner">
+                                <div class="d_blue h w">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab_2" class="level_medium tabs__block">
+
+                            <div id="a1" class="wrap_dot_medium">
+                                <div class="d_red h w">
+
+                                </div>
+                            </div>
+                            <div id="a2" class="wrap_dot_medium">
+                                <div class="d_red h w">
+
+                                </div>
+                            </div>
+                            <div id="a3" class="wrap_dot_medium">
+                                <div class="d_green h w">
+
+                                </div>
+                            </div>
+                            <div id="a4" class="wrap_dot_medium">
+                                <div class="d_yellow h w">
+
+                                </div>
+                            </div>
+                            <div id="a5" class="wrap_dot_medium">
+                                <div class="d_green h w">
+
+                                </div>
+                            </div>
+                            <div id="a6" class="wrap_dot_medium">
+                                <div class="d_purple h w">
+
+                                </div>
+                            </div>
+
+                            <div id="b1" class="wrap_dot_medium">
+                                <div class="d_green h w">
+
+                                </div>
+                            </div>
+                            <div id="b2" class="wrap_dot_medium">
+                                <div class="d_red h w">
+
+                                </div>
+                            </div>
+                            <div id="b3" class="wrap_dot_medium">
+                                <div class="d_green h w">
+
+                                </div>
+                            </div>
+                            <div id="b4" class="wrap_dot_medium">
+                                <div class="d_green h w">
+
+                                </div>
+                            </div>
+                            <div id="b5" class="wrap_dot_medium">
+                                <div class="d_blue h w">
+
+                                </div>
+                            </div>
+                            <div id="b6" class="wrap_dot_medium">
+                                <div class="d_blue h w">
+
+                                </div>
+                            </div>
+
+                            <div id="c1" class="wrap_dot_medium">
+                                <div class="d_purple h w">
+
+                                </div>
+                            </div>
+                            <div id="c2" class="wrap_dot_medium">
+                                <div class="d_red h w">
+
+                                </div>
+                            </div>
+                            <div id="c3" class="wrap_dot_medium">
+                                <div class="d_purple h w">
+
+                                </div>
+                            </div>
+                            <div id="c4" class="wrap_dot_medium">
+                                <div class="d_yellow h w">
+
+                                </div>
+                            </div>
+                            <div id="c5" class="wrap_dot_medium">
+                                <div class="d_purple h w">
+
+                                </div>
+                            </div>
+                            <div id="c6" class="wrap_dot_medium">
+                                <div class="d_purple h w">
+
+                                </div>
+                            </div>
+
+                            <div id="d1" class="wrap_dot_medium">
+                                <div class="d_blue h w">
+
+                                </div>
+                            </div>
+                            <div id="d2" class="wrap_dot_medium">
+                                <div class="d_blue h w">
+
+                                </div>
+                            </div>
+                            <div id="d3" class="wrap_dot_medium">
+                                <div class="d_green h w">
+
+                                </div>
+                            </div>
+                            <div id="d4" class="wrap_dot_medium">
+                                <div class="d_blue h w">
+
+                                </div>
+                            </div>
+                            <div id="d5" class="wrap_dot_medium">
+                                <div class="d_green h w">
+
+                                </div>
+                            </div>
+                            <div id="d6" class="wrap_dot_medium">
+                                <div class="d_green h w">
+
+                                </div>
+                            </div>
+
+                            <div id="e1" class="wrap_dot_medium">
+                                <div class="d_purple h w">
+
+                                </div>
+                            </div>
+                            <div id="e2" class="wrap_dot_medium">
+                                <div class="d_yellow h w">
+
+                                </div>
+                            </div>
+                            <div id="e3" class="wrap_dot_medium">
+                                <div class="d_green h w">
+
+                                </div>
+                            </div>
+                            <div id="e4" class="wrap_dot_medium">
+                                <div class="d_yellow h w">
+
+                                </div>
+                            </div>
+                            <div id="e5" class="wrap_dot_medium">
+                                <div class="d_green h w">
+
+                                </div>
+                            </div>
+                            <div id="e6" class="wrap_dot_medium">
+                                <div class="d_yellow h w">
+
+                                </div>
+                            </div>
+
+                            <div id="f1" class="wrap_dot_medium">
+                                <div class="d_red h w">
+
+                                </div>
+                            </div>
+                            <div id="f2" class="wrap_dot_medium">
+                                <div class="d_red h w">
+
+                                </div>
+                            </div>
+                            <div id="f3" class="wrap_dot_medium">
+                                <div class="d_green h w">
+
+                                </div>
+                            </div>
+                            <div id="f4" class="wrap_dot_medium">
+                                <div class="d_yellow h w">
+
+                                </div>
+                            </div>
+                            <div id="f5" class="wrap_dot_medium">
+                                <div class="d_green h w">
+
+                                </div>
+                            </div>
+                            <div id="f6" class="wrap_dot_medium">
+                                <div class="d_purple h w">
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div id="tab_3" class="level_hard tabs__block">
+
+                            <div id="a1" class="wrap_dot_hard">
+                                <div class="d_red h w">
+
+                                </div>
+                            </div>
+                            <div id="a2" class="wrap_dot_hard">
+                                <div class="d_red h w">
+
+                                </div>
+                            </div>
+                            <div id="a3" class="wrap_dot_hard">
+                                <div class="d_green h w">
+
+                                </div>
+                            </div>
+                            <div id="a4" class="wrap_dot_hard">
+                                <div class="d_yellow h w">
+
+                                </div>
+                            </div>
+                            <div id="a5" class="wrap_dot_hard">
+                                <div class="d_green h w">
+
+                                </div>
+                            </div>
+                            <div id="a6" class="wrap_dot_hard">
+                                <div class="d_purple h w">
+
+                                </div>
+                            </div>
+                            <div id="a7" class="wrap_dot_hard">
+                                <div class="d_purple h w">
+
+                                </div>
+                            </div>
+                            <div id="a8" class="wrap_dot_hard">
+                                <div class="d_purple h w">
+
+                                </div>
+                            </div>
+
+                            <div id="b1" class="wrap_dot_hard">
+                                <div class="d_green h w">
+
+                                </div>
+                            </div>
+                            <div id="b2" class="wrap_dot_hard">
+                                <div class="d_red h w">
+
+                                </div>
+                            </div>
+                            <div id="b3" class="wrap_dot_hard">
+                                <div class="d_green h w">
+
+                                </div>
+                            </div>
+                            <div id="b4" class="wrap_dot_hard">
+                                <div class="d_purple h w">
+
+                                </div>
+                            </div>
+                            <div id="b5" class="wrap_dot_hard">
+                                <div class="d_green h w">
+
+                                </div>
+                            </div>
+                            <div id="b6" class="wrap_dot_hard">
+                                <div class="d_red h w">
+
+                                </div>
+                            </div>
+                            <div id="b7" class="wrap_dot_hard">
+                                <div class="d_green h w">
+
+                                </div>
+                            </div>
+                            <div id="b8" class="wrap_dot_hard">
+                                <div class="d_purple h w">
+
+                                </div>
+                            </div>
+
+                            <div id="c1" class="wrap_dot_hard">
+                                <div class="d_purple h w">
+
+                                </div>
+                            </div>
+                            <div id="c2" class="wrap_dot_hard">
+                                <div class="d_blue h w">
+
+                                </div>
+                            </div>
+                            <div id="c3" class="wrap_dot_hard">
+                                <div class="d_yellow h w">
+
+                                </div>
+                            </div>
+                            <div id="c4" class="wrap_dot_hard">
+                                <div class="d_green h w">
+
+                                </div>
+                            </div>
+                            <div id="c5" class="wrap_dot_hard">
+                                <div class="d_red h w">
+
+                                </div>
+                            </div>
+                            <div id="c6" class="wrap_dot_hard">
+                                <div class="d_purple h w">
+
+                                </div>
+                            </div>
+                            <div id="c7" class="wrap_dot_hard">
+                                <div class="d_blue h w">
+
+                                </div>
+                            </div>
+                            <div id="c8" class="wrap_dot_hard">
+                                <div class="d_yellow h w">
+
+                                </div>
+                            </div>
+
+                            <div id="d1" class="wrap_dot_hard">
+                                <div class="d_green h w">
+
+                                </div>
+                            </div>
+                            <div id="d2" class="wrap_dot_hard">
+                                <div class="d_green h w">
+
+                                </div>
+                            </div>
+                            <div id="d3" class="wrap_dot_hard">
+                                <div class="d_yellow h w">
+
+                                </div>
+                            </div>
+                            <div id="d4" class="wrap_dot_hard">
+                                <div class="d_yellow h w">
+
+                                </div>
+                            </div>
+                            <div id="d5" class="wrap_dot_hard">
+                                <div class="d_blue h w">
+
+                                </div>
+                            </div>
+                            <div id="d6" class="wrap_dot_hard">
+                                <div class="d_blue h w">
+
+                                </div>
+                            </div>
+                            <div id="d7" class="wrap_dot_hard">
+                                <div class="d_red h w">
+
+                                </div>
+                            </div>
+                            <div id="d8" class="wrap_dot_hard">
+                                <div class="d_red h w">
+
+                                </div>
+                            </div>
+
+                            <div id="e1" class="wrap_dot_hard">
+                                <div class="d_red h w">
+
+                                </div>
+                            </div>
+                            <div id="e2" class="wrap_dot_hard">
+                                <div class="d_red h w">
+
+                                </div>
+                            </div>
+                            <div id="e3" class="wrap_dot_hard">
+                                <div class="d_green h w">
+
+                                </div>
+                            </div>
+                            <div id="e4" class="wrap_dot_hard">
+                                <div class="d_yellow h w">
+
+                                </div>
+                            </div>
+                            <div id="e5" class="wrap_dot_hard">
+                                <div class="d_green h w">
+
+                                </div>
+                            </div>
+                            <div id="e6" class="wrap_dot_hard">
+                                <div class="d_purple h w">
+
+                                </div>
+                            </div>
+                            <div id="e7" class="wrap_dot_hard">
+                                <div class="d_purple h w">
+
+                                </div>
+                            </div>
+                            <div id="e8" class="wrap_dot_hard">
+                                <div class="d_purple h w">
+
+                                </div>
+                            </div>
+
+                            <div id="f1" class="wrap_dot_hard">
+                                <div class="d_green h w">
+
+                                </div>
+                            </div>
+                            <div id="f2" class="wrap_dot_hard">
+                                <div class="d_red h w">
+
+                                </div>
+                            </div>
+                            <div id="f3" class="wrap_dot_hard">
+                                <div class="d_green h w">
+
+                                </div>
+                            </div>
+                            <div id="f4" class="wrap_dot_hard">
+                                <div class="d_purple h w">
+
+                                </div>
+                            </div>
+                            <div id="f5" class="wrap_dot_hard">
+                                <div class="d_green h w">
+
+                                </div>
+                            </div>
+                            <div id="f6" class="wrap_dot_hard">
+                                <div class="d_red h w">
+
+                                </div>
+                            </div>
+                            <div id="f7" class="wrap_dot_hard">
+                                <div class="d_green h w">
+
+                                </div>
+                            </div>
+                            <div id="f8" class="wrap_dot_hard">
+                                <div class="d_purple h w">
+
+                                </div>
+                            </div>
+
+                            <div id="g1" class="wrap_dot_hard">
+                                <div class="d_purple h w">
+
+                                </div>
+                            </div>
+                            <div id="g2" class="wrap_dot_hard">
+                                <div class="d_blue h w">
+
+                                </div>
+                            </div>
+                            <div id="g3" class="wrap_dot_hard">
+                                <div class="d_yellow h w">
+
+                                </div>
+                            </div>
+                            <div id="g4" class="wrap_dot_hard">
+                                <div class="d_green h w">
+
+                                </div>
+                            </div>
+                            <div id="g5" class="wrap_dot_hard">
+                                <div class="d_red h w">
+
+                                </div>
+                            </div>
+                            <div id="g6" class="wrap_dot_hard">
+                                <div class="d_purple h w">
+
+                                </div>
+                            </div>
+                            <div id="g7" class="wrap_dot_hard">
+                                <div class="d_blue h w">
+
+                                </div>
+                            </div>
+                            <div id="g8" class="wrap_dot_hard">
+                                <div class="d_yellow h w">
+
+                                </div>
+                            </div>
+
+                            <div id="h1" class="wrap_dot_hard">
+                                <div class="d_green h w">
+
+                                </div>
+                            </div>
+                            <div id="h2" class="wrap_dot_hard">
+                                <div class="d_green h w">
+
+                                </div>
+                            </div>
+                            <div id="h3" class="wrap_dot_hard">
+                                <div class="d_yellow h w">
+
+                                </div>
+                            </div>
+                            <div id="h4" class="wrap_dot_hard">
+                                <div class="d_yellow h w">
+
+                                </div>
+                            </div>
+                            <div id="h5" class="wrap_dot_hard">
+                                <div class="d_blue h w">
+
+                                </div>
+                            </div>
+                            <div id="h6" class="wrap_dot_hard">
+                                <div class="d_blue h w">
+
+                                </div>
+                            </div>
+                            <div id="h7" class="wrap_dot_hard">
+                                <div class="d_red h w">
+
+                                </div>
+                            </div>
+                            <div id="h8" class="wrap_dot_hard">
+                                <div class="d_red h w">
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!--очки / score / рейтинг-->
+                <div class="f fac">
+                    <h2>
+                        Score: 0
+                    </h2>
+                </div>
+            </div>
+            <!--топ 10 игроков-->
+            <div class="f fc gap8 f_f _br32 pad16 w background _b_all gap16">
+                <h2>
+                    TOP 10 Players
+                </h2>
+                <ol class="scroll h_96 f fc gap8 fac pad16r pad32l">
+
+                    <!--шаблон вывода элемента топ игроков/-->
+                    <li class="_b_b_grey w">
+                        <div class="f gap4">
+                            <p class="fs16 f_336_01 fw600">@nickname</p>
+                            <span class="BIG fs16">0.0</span>
+                        </div>
+                    </li>
+                    <!--удалить набросок-->
+                    <li class="_b_b_grey w">
+                        <div class="f gap4">
+                            <p class="fs16 f_336_01 fw600">@nickname</p>
+                            <span class="BIG fs16">0.0</span>
+                        </div>
+                    </li>
+                    <li class="_b_b_grey w">
+                        <div class="f gap4">
+                            <p class="fs16 f_336_01 fw600">@nickname</p>
+                            <span class="BIG fs16">0.0</span>
+                        </div>
+                    </li>
+                    <li class="_b_b_grey w">
+                        <div class="f gap4">
+                            <p class="fs16 f_336_01 fw600">@nickname</p>
+                            <span class="BIG fs16">0.0</span>
+                        </div>
+                    </li>
+                    <li class="_b_b_grey w">
+                        <div class="f gap4">
+                            <p class="fs16 f_336_01 fw600">@nickname</p>
+                            <span class="BIG fs16">0.0</span>
+                        </div>
+                    </li>
+                    <!--удалить набросок конец-->
+
+                </ol>
+            </div>
+        </div>
+        <!--правая колонка комментарии-->
+        <div class="f fc f_f gap8 _br32 gap16 pad32 background h f_336_01 _b_all">
+            <h2 class="f _f_">
+                Comments
+            </h2>
+            <div class="f fc gap8 pad4 scroll h_304">
+                <!--список комментариев чат комменты-->
+                <div class="f fc gap4">
+                    <h3>
+                        @nickname
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur. Donec elementum euismod volutpat nascetur risus malesuada cras. Et risus
+                    </p>
+                </div>
+                <!--отсюда -->
+                <div class="f fc gap4">
+                    <h3>
+                        @nickname
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur. Donec elementum euismod volutpat nascetur risus malesuada cras. Et risus
+                    </p>
+                </div>
+                <div class="f fc gap4">
+                    <h3>
+                        @nickname
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur. Donec elementum euismod volutpat nascetur risus malesuada cras. Et risus
+                    </p>
+                </div>
+                <div class="f fc gap4">
+                    <h3>
+                        @nickname
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur. Donec elementum euismod volutpat nascetur risus malesuada cras. Et risus
+                    </p>
+                </div>
+                <div class="f fc gap4">
+                    <h3>
+                        @nickname
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur. Donec elementum euismod volutpat nascetur risus malesuada cras. Et risus
+                    </p>
+                </div>
+                <div class="f fc gap4">
+                    <h3>
+                        @nickname
+                    </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur. Donec elementum euismod volutpat nascetur risus malesuada cras. Et risus
+                    </p>
+                </div>
+                <!--до сюда - удалить-->
+            </div>
+
+            <!--форма добавления комментария /комментарий/comments/чат-->
+            <form action="" method="post" class="f f_f gap8 pad32t pad32b pad4l pad4r">
+                <input type="text" class="w background" placeholder="Your comment....">
+                <button type="submit">
+                    <img src="icons/send.svg" alt="">
+                </button>
+            </form>
+
+            <!--форма обновления/обновление комментариев /комментарий/-->
+            <form action="" method="post" class="f _f_"  id="browse_latest">
+                <button type="submit" class="f f_f _b_b_blue gap4">
+                        <span class="c6">
+                            Browse latest
+                        </span>
+                    <soan class="w_16">
+                        <img src="icons/clock.svg" alt="">
+                    </soan>
+                </button>
+            </form>
+
+        </div>
+    </div>
+    <!--end body-->
+
+    <script src="script.js"></script>
+    <script src="dots.js"></script>
+</div>
+
+
+</body>
+</html>
