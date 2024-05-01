@@ -44,6 +44,23 @@
                     Already have account? <button id="login" type="button" class="c6" data-name="login" >Log in</button>
                 </span>
             </div>
+            <script>
+                document.getElementById('login').addEventListener('click', function() {
+                    var emailField = document.getElementById('user_email');
+                    var repeatPasswordField = document.getElementById('user_repeat_password');
+                    var loginButton = document.getElementById('login');
+
+                    if (loginButton.innerText === 'Log in') {
+                        emailField.style.display = 'none';
+                        repeatPasswordField.style.display = 'none';
+                        loginButton.innerText = 'Registration';
+                    } else {
+                        emailField.style.display = '';
+                        repeatPasswordField.style.display = '';
+                        loginButton.innerText = 'Log in';
+                    }
+                });
+            </script>
         </div>
     </div>
     <!--end body-->

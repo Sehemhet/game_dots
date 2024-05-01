@@ -1,12 +1,22 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 * {
     font-family:'Asap';
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     line-height: normal;
     color: inherit;
     text-transform: none;
     text-decoration: none;
+    -webkit-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
     transition: 0.2s ease;
 }
 :root {
@@ -34,11 +44,11 @@
 }
 
 /* цвета точек */
-.d_red {background: linear-gradient(to right, var(--d_red_1), var(--d_red_2));}
-.d_green {background: linear-gradient(to right, var(--d_green_1), var(--d_green_2));}
-.d_yellow {background: linear-gradient(to right, var(--d_yellow_1), var(--d_yellow_2));}
-.d_blue {background: linear-gradient(to right, var(--d_blue_1), var(--d_blue_2));}
-.d_purple {background: linear-gradient(to right, var(--d_purple_1), var(--d_purple_2));}
+.d_red {background: -webkit-gradient(linear, left top, right top, from(var(--d_red_1)), to(var(--d_red_2)));background: -o-linear-gradient(left, var(--d_red_1), var(--d_red_2));background: linear-gradient(to right, var(--d_red_1), var(--d_red_2));}
+.d_green {background: -webkit-gradient(linear, left top, right top, from(var(--d_green_1)), to(var(--d_green_2)));background: -o-linear-gradient(left, var(--d_green_1), var(--d_green_2));background: linear-gradient(to right, var(--d_green_1), var(--d_green_2));}
+.d_yellow {background: -webkit-gradient(linear, left top, right top, from(var(--d_yellow_1)), to(var(--d_yellow_2)));background: -o-linear-gradient(left, var(--d_yellow_1), var(--d_yellow_2));background: linear-gradient(to right, var(--d_yellow_1), var(--d_yellow_2));}
+.d_blue {background: -webkit-gradient(linear, left top, right top, from(var(--d_blue_1)), to(var(--d_blue_2)));background: -o-linear-gradient(left, var(--d_blue_1), var(--d_blue_2));background: linear-gradient(to right, var(--d_blue_1), var(--d_blue_2));}
+.d_purple {background: -webkit-gradient(linear, left top, right top, from(var(--d_purple_1)), to(var(--d_purple_2)));background: -o-linear-gradient(left, var(--d_purple_1), var(--d_purple_2));background: linear-gradient(to right, var(--d_purple_1), var(--d_purple_2));}
 
 
 p {font-size:14px;}
@@ -99,11 +109,11 @@ input {font-size:16px; border:none;}
 .h_304 {height:304px;}
 .h_96 {height:96px;}
 
-.f_auto {flex:1 1 auto;}
-.f_336_01 {flex:0 1 336px;}
-.f_544 {flex:1 1 544px; max-width:544px; min-width:200px;}
+.f_auto {-webkit-box-flex:1;-ms-flex:1 1 auto;flex:1 1 auto;}
+.f_336_01 {-webkit-box-flex:0;-ms-flex:0 1 336px;flex:0 1 336px;}
+.f_544 {-webkit-box-flex:1;-ms-flex:1 1 544px;flex:1 1 544px; max-width:544px; min-width:200px;}
 
-img {width:100%;height:100%;object-fit:contain;}
+img {width:100%;height:100%;-o-object-fit:contain;object-fit:contain;}
 
 ._b_b_grey {border-bottom: 1px solid var(--c4);}
 ._b_b_blue {border-bottom: 1px solid var(--c6);}
@@ -171,10 +181,4 @@ button:hover {
 
 .NONE {
     display:none !important;
-}
-
-
-/*
-* {
-    border:1px solid green;
 }
