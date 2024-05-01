@@ -49,6 +49,8 @@ function showTab(tabId) {
     localStorage.setItem('selectedTabId', tabId);
 }
 
+
+
 // функция выбраного таба
 function clickButtonTab () {
     for (var i = 1; i <= 3; i++) {
@@ -63,7 +65,7 @@ function clickButtonTab () {
 //добавляение активной кнопки от активного контейнера
 function setActiveButton() {
     // Перебираем все табы
-    for (var i = 1; i <= 7; i++) {
+    for (var i = 1; i <= 3; i++) {
         var tabId = 'tab_' + i;
         var buttonId = tabId + '_button';
         var tab = document.getElementById(tabId);
@@ -71,12 +73,13 @@ function setActiveButton() {
 
         // Если таб имеет класс active-tab, добавляем класс btn_tab_active кнопке
         if (tab.classList.contains('active-tab')) {
-            button.classList.add('btn_tab_active');
+            button.classList.add('level_active');
         } else {
-            button.classList.remove('btn_tab_active');
+            button.classList.remove('level_active');
         }
     }
 }
+
 
 document.addEventListener('DOMContentLoaded', function() {
 
