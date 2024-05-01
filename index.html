@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -13,7 +13,7 @@
     <!-- header -->
     <div class="f f_f pad16 wallpaper fac _br32 w">
         <div class="w_48 f fac _f_">
-            <img src="logo.svg" alt="">
+            <img src="images/logo.svg" alt="">
         </div>
         <div class="f fac gap32">
 
@@ -57,13 +57,18 @@
             <!--игра-->
             <div class="f fc gap8 f_f _br32 pad16 w background f_auto _b_all">
                 <!--уровень сложности / сложность / level-->
+
+                <!--изменено 1.2 начало-->
                 <div class="w">
                     <div id="level_form" class="f fac gap8 _f_">
-                        <button type="submit" onclick="showTab('tab_1', this)" class="fs16 pad8t pad8b pad16l pad16r _br32 BIG">Beginner</button>
-                        <button type="submit" onclick="showTab('tab_2', this)" class="fs16 pad8t pad8b pad16l pad16r _br32 BIG">Medium</button>
-                        <button type="submit" onclick="showTab('tab_3', this)" class="fs16 pad8t pad8b pad16l pad16r _br32 BIG">Hard</button>
+                        <button type="submit" onclick="showTab('tab_1', this)" class="fs16 pad8t pad8b pad16l pad16r _br32 BIG" data-tab="tab_1">Beginner</button>
+                        <button type="submit" onclick="showTab('tab_2', this)" class="fs16 pad8t pad8b pad16l pad16r _br32 BIG" data-tab="tab_2">Medium</button>
+                        <button type="submit" onclick="showTab('tab_3', this)" class="fs16 pad8t pad8b pad16l pad16r _br32 BIG" data-tab="tab_3">Hard</button>
                     </div>
                 </div>
+                <!--изменено 1.2 конец-->
+
+
                 <!--игра-->
                 <div class="w f_auto h">
                     <div class="f fac _f_ h">
@@ -803,7 +808,7 @@
             <form action="" method="post" class="f f_f gap8 pad32t pad32b pad4l pad4r">
                 <input type="text" class="w background" placeholder="Your comment....">
                 <button type="submit">
-                    <img src="icons/send.svg" alt="">
+                    <img src="images/send.svg" alt="">
                 </button>
             </form>
 
@@ -814,7 +819,7 @@
                             Browse latest
                         </span>
                     <soan class="w_16">
-                        <img src="icons/clock.svg" alt="">
+                        <img src="images/clock.svg" alt="">
                     </soan>
                 </button>
             </form>
@@ -823,8 +828,8 @@
     </div>
     <!--end body-->
 
-    <script src="script.js"></script>
-    <script src="dots.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/dots.js"></script>
 </div>
 
 

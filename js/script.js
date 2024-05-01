@@ -33,8 +33,8 @@ document.getElementById('theme_switch').addEventListener('change', toggleTheme);
 
 
 
-// выбор сложности
-function showTab(tabId) {
+// Функция выбора сложности
+function showTab(tabId, button) {
     // Скрыть все табы
     var tabs = document.querySelectorAll('.tabs__block');
     tabs.forEach(function(tab) {
@@ -47,42 +47,19 @@ function showTab(tabId) {
 
     // Сохраняем выбранный таб в localStorage
     localStorage.setItem('selectedTabId', tabId);
+
+    // Удалить класс активной кнопки у всех кнопок
+    var buttons = document.querySelectorAll('#level_form button');
+    buttons.forEach(function(btn) {
+        btn.classList.remove('level_active');
+    });
+
+    // Добавить класс активной кнопки к нажатой кнопке
+    button.classList.add('level_active');
+
 }
-
-
-
-// функция выбраного таба
-function clickButtonTab () {
-    for (var i = 1; i <= 3; i++) {
-        var buttonId = 'tab_' + i + '_button';
-        var button = document.getElementById(buttonId);
-        button.addEventListener('click', function() {
-            setActiveButton();
-        });
-    }
-}
-
-//добавляение активной кнопки от активного контейнера
-function setActiveButton() {
-    // Перебираем все табы
-    for (var i = 1; i <= 3; i++) {
-        var tabId = 'tab_' + i;
-        var buttonId = tabId + '_button';
-        var tab = document.getElementById(tabId);
-        var button = document.getElementById(buttonId);
-
-        // Если таб имеет класс active-tab, добавляем класс btn_tab_active кнопке
-        if (tab.classList.contains('active-tab')) {
-            button.classList.add('level_active');
-        } else {
-            button.classList.remove('level_active');
-        }
-    }
-}
-
 
 document.addEventListener('DOMContentLoaded', function() {
-
     // Получаем идентификатор выбранного таба из localStorage
     var selectedTabId = localStorage.getItem('selectedTabId');
 
@@ -92,10 +69,11 @@ document.addEventListener('DOMContentLoaded', function() {
         localStorage.setItem('selectedTabId', selectedTabId); // Сохраняем выбранный таб
     }
 
-    // Показать выбранный таб при загрузке страницы
-    showTab(selectedTabId);
-
+    // Показать выбранную сложность при загрузке страницы
+    var selectedButton = document.querySelector('#level_form button[data-tab="' + selectedTabId + '"]');
+    showTab(selectedTabId, selectedButton);
 });
+
 
 
 
