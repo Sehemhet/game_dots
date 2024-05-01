@@ -46,7 +46,11 @@ h3 {font-size:12px;}
 h2 {font-size:24px;}
 input {font-size:16px; border:none;}
 .fs16 {font-size:16px;}
+.fs36 {font-size:36px;}
+.fs48 {font-size:48px;}
 
+
+.c5 {color:var(--c5);}
 .c6 {color:var(--c6);}
 
 .parent {
@@ -67,6 +71,8 @@ input {font-size:16px; border:none;}
 .pad16 {padding:16px;}
 .pad16r {padding-right:16px;}
 .pad16l {padding-left:16px;}
+.pad16t {padding-top:16px;}
+.pad16b {padding-bottom:16px;}
 
 .pad32 {padding:32px;}
 .pad32t {padding-top:32px;}
@@ -93,8 +99,9 @@ input {font-size:16px; border:none;}
 .h_304 {height:304px;}
 .h_96 {height:96px;}
 
-.f_auto {flex:1 1 auto}
-.f_336_01 {flex:0 1 336px}
+.f_auto {flex:1 1 auto;}
+.f_336_01 {flex:0 1 336px;}
+.f_544 {flex:1 1 544px; max-width:544px; min-width:200px;}
 
 img {width:100%;height:100%;object-fit:contain;}
 
@@ -165,6 +172,7 @@ button:hover {
 .NONE {
     display:none !important;
 }
+
 
 /*
 * {

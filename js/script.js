@@ -1,3 +1,20 @@
+document.getElementById('login').addEventListener('click', function() {
+    var emailField = document.getElementById('user_email');
+    var repeatPasswordField = document.getElementById('user_repeat_password');
+    var loginButton = document.getElementById('login');
+
+    if (loginButton.innerText === 'Log in') {
+        emailField.style.display = 'none';
+        repeatPasswordField.style.display = 'none';
+        loginButton.innerText = 'Registration';
+    } else {
+        emailField.style.display = '';
+        repeatPasswordField.style.display = '';
+        loginButton.innerText = 'Log in';
+    }
+});
+
+
 // Функция для переключения темы
 function toggleTheme() {
     var parentElement = document.querySelector('.parent');
@@ -73,7 +90,3 @@ document.addEventListener('DOMContentLoaded', function() {
     var selectedButton = document.querySelector('#level_form button[data-tab="' + selectedTabId + '"]');
     showTab(selectedTabId, selectedButton);
 });
-
-
-
-
