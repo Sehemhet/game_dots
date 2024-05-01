@@ -15,25 +15,25 @@
         <div class="popup_in">
             <!--если победил-->
             <div class="winn_form ACTIVE">
-                <h1 class="_t_">
+                <span class="_t_ fs36">
                     You Win!<br>
                     Congratulations!
-                </h1>
+                </span>
                 <button type="button" onclick="openRaiting();" class="f w fac _b_b_blue _br32 _f_ pad16t pad16b c5 d_blue">Next</button>
             </div>
             <!--если выиграл-->
             <div class="lose_form ">
-                <h1 class="_t_">
+                <span class="_t_ fs36">
                     You Lose<br>
                     Try again!
-                </h1>
+                </span>
                 <button type="button" onclick="openRaiting();" class="f w fac _b_b_blue _br32 _f_ pad16t pad16b c5 d_blue">Next</button>
             </div>
             <!--рейтинг-->
             <form action="index.html" method="post" class="raiting_form">
-                <h1 class="fs24 BIG _t_">
+                <span class="fs24 fw _t_">
                     Please evaluate our game
-                </h1>
+                </span>
                 <div class="f gap8 w f_f fac full-stars">
                     <div class="rating-group">
                         <!-- по умолчанию 0 -->
@@ -742,10 +742,13 @@
                     </div>
                 </div>
                 <!--очки / score / рейтинг-->
-                <div class="f fac">
-                    <h2>
+                <div class="f fac f_f">
+                    <h2 class="f">
                         Score: 0
                     </h2>
+                    <span id="time_game" class="time_game f">
+                        05:00
+                    </span>
                 </div>
             </div>
             <!--топ 10 игроков-->
