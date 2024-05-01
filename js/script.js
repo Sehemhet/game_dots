@@ -102,3 +102,27 @@ function openRaiting() {
     }
     raitingForm.classList.add('ACTIVE');
 }
+
+
+function setDotName() {
+    var wrapDots = document.querySelectorAll('.wrap_dot_beginner');
+    wrapDots.forEach(function(wrapDot) {
+        var child = wrapDot.querySelector('.wrap_dot_beginner > div');
+        if (child.classList.contains('d_red')) {
+            wrapDot.dataset.name = "RED";
+        } else if (child.classList.contains('d_green')) {
+            wrapDot.dataset.name = "GREEN";
+        } else if (child.classList.contains('d_yellow')) {
+            wrapDot.dataset.name = "YELLOW";
+        } else if (child.classList.contains('d_blue')) {
+            wrapDot.dataset.name = "BLUE";
+        } else if (child.classList.contains('d_purple')) {
+            wrapDot.dataset.name = "PURPLE";
+        }
+    });
+}
+
+// Вызов функции
+setDotName();
+
+
