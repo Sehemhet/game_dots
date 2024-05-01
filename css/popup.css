@@ -1,0 +1,82 @@
+
+.popup {
+    height:100vh;
+    width:100vw;
+    background:rgba(0,0,0,0.5);
+    display:none;
+    align-items:center;
+    justify-content:center;
+    z-index:999;
+    position:fixed;
+}
+
+.popup_in {
+    height:384px;
+    width:384px;
+    padding:32px;
+    border-radius:32px;
+    background:var(--c5);
+}
+
+.winn_form {
+    height:100%;
+    width:100%;
+    display:none;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:16px;
+}
+.lose_form {
+    height:100%;
+    width:100%;
+    display:none;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:16px;
+}
+
+.raiting_form {
+    display:none;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+    height:100%;
+    width:100%;
+}
+
+
+
+.full-stars {
+    text-align: center;
+}
+.full-stars .rating-group {
+    display: flex;
+    width:100%;
+    justify-content:center;
+}
+.full-stars input {
+    position: absolute;
+    left: -9999px;
+}
+.full-stars label {
+    margin: 0;
+    cursor: pointer;
+}
+.full-stars label svg {
+    margin: 2px;
+    height: 40px;
+    width: 40px;
+    fill: #337AB7;
+    transition: fill 0.3s;
+}
+.full-stars input:checked ~ label svg {
+    fill: #BFE2FF;
+}
+.full-stars .rating-group:hover label svg {
+    fill: #337AB7;
+}
+.full-stars .rating-group input:hover ~ label svg {
+    fill: #BFE2FF;
+}
