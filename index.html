@@ -30,7 +30,7 @@
                 <button type="button" onclick="openRaiting();" class="f w fac _b_b_blue _br32 _f_ pad16t pad16b c5 d_blue">Next</button>
             </div>
             <!--рейтинг-->
-            <form action="index.html" method="post" class="raiting_form">
+            <div class="raiting_form">
                 <span class="fs24 fw _t_">
                     Please evaluate our game
                 </span>
@@ -72,7 +72,7 @@
                 </div>
                 <button type="button" onclick="closePopup()" class="f w fac _b_b_blue _br32 _f_ pad16t pad16b c5 d_blue">Next</button>
                 <button type="button" onclick="closePopup()" class="c6">Skip</button>
-            </form>
+            </div>
         </div>
     </div>
 
@@ -120,639 +120,643 @@
         <!--левая колонка игра / топ игроки-->
         <div class="f fc f_f gap8 f_auto h">
             <!--игра-->
-            <div class="f fc gap8 f_f _br32 pad16 w background f_auto _b_all">
-                <!--уровень сложности / сложность / level-->
-
-                <!--изменено 1.2 начало-->
-                <div class="w">
-                    <div id="level_form" class="f fac gap8 _f_">
-                        <button type="button" onclick="showTab('tab_1', this)" class="fs16 pad8t pad8b pad16l pad16r _br32 BIG" data-tab="tab_1">Beginner</button>
-                        <button type="button" onclick="showTab('tab_2', this)" class="fs16 pad8t pad8b pad16l pad16r _br32 BIG" data-tab="tab_2">Medium</button>
-                        <button type="button" onclick="showTab('tab_3', this)" class="fs16 pad8t pad8b pad16l pad16r _br32 BIG" data-tab="tab_3">Hard</button>
-                    </div>
-                </div>
-                <!--изменено 1.2 конец-->
-
-
-                <!--игра-->
-                <div class="w f_auto h">
-                    <div class="f fac _f_ h">
-                        <div id="tab_1" class="level_beginner tabs__block">
-                            <div id="a1" class="wrap_dot_beginner">
-                                <div class="d_red h w _br50">
-
-                                </div>
-                            </div>
-                            <div id="a2" class="wrap_dot_beginner">
-                                <div class="d_red h w _br50">
-
-                                </div>
-                            </div>
-                            <div id="a3" class="wrap_dot_beginner">
-                                <div class="d_green h w _br50">
-
-                                </div>
-                            </div>
-                            <div id="a4" class="wrap_dot_beginner">
-                                <div class="d_yellow h w _br50">
-
-                                </div>
-                            </div>
-                            <div id="b1" class="wrap_dot_beginner">
-                                <div class="d_green h w _br50">
-
-                                </div>
-                            </div>
-                            <div id="b2" class="wrap_dot_beginner">
-                                <div class="d_purple h w _br50">
-
-                                </div>
-                            </div>
-                            <div id="b3" class="wrap_dot_beginner">
-                                <div class="d_yellow h w _br50">
-
-                                </div>
-                            </div>
-                            <div id="b4" class="wrap_dot_beginner">
-                                <div class="d_blue h w _br50">
-
-                                </div>
-                            </div>
-                            <div id="c1" class="wrap_dot_beginner">
-                                <div class="d_purple h w _br50">
-
-                                </div>
-                            </div>
-                            <div id="c2" class="wrap_dot_beginner">
-                                <div class="d_blue h w _br50">
-
-                                </div>
-                            </div>
-                            <div id="c3" class="wrap_dot_beginner">
-                                <div class="d_red h w _br50">
-
-                                </div>
-                            </div>
-                            <div id="c4" class="wrap_dot_beginner">
-                                <div class="d_purple h w _br50">
-
-                                </div>
-                            </div>
-                            <div id="d1" class="wrap_dot_beginner">
-                                <div class="d_red h w _br50">
-
-                                </div>
-                            </div>
-                            <div id="d2" class="wrap_dot_beginner">
-                                <div class="d_red h w _br50">
-
-                                </div>
-                            </div>
-                            <div id="d3" class="wrap_dot_beginner">
-                                <div class="d_blue h w _br50">
-
-                                </div>
-                            </div>
-                            <div id="d4" class="wrap_dot_beginner">
-                                <div class="d_blue h w _br50">
-
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div id="tab_2" class="level_medium tabs__block">
-
-                            <div id="a1" class="wrap_dot_medium">
-                                <div class="d_red h w">
-
-                                </div>
-                            </div>
-                            <div id="a2" class="wrap_dot_medium">
-                                <div class="d_red h w">
-
-                                </div>
-                            </div>
-                            <div id="a3" class="wrap_dot_medium">
-                                <div class="d_green h w">
-
-                                </div>
-                            </div>
-                            <div id="a4" class="wrap_dot_medium">
-                                <div class="d_yellow h w">
-
-                                </div>
-                            </div>
-                            <div id="a5" class="wrap_dot_medium">
-                                <div class="d_green h w">
-
-                                </div>
-                            </div>
-                            <div id="a6" class="wrap_dot_medium">
-                                <div class="d_purple h w">
-
-                                </div>
-                            </div>
-
-                            <div id="b1" class="wrap_dot_medium">
-                                <div class="d_green h w">
-
-                                </div>
-                            </div>
-                            <div id="b2" class="wrap_dot_medium">
-                                <div class="d_red h w">
-
-                                </div>
-                            </div>
-                            <div id="b3" class="wrap_dot_medium">
-                                <div class="d_green h w">
-
-                                </div>
-                            </div>
-                            <div id="b4" class="wrap_dot_medium">
-                                <div class="d_green h w">
-
-                                </div>
-                            </div>
-                            <div id="b5" class="wrap_dot_medium">
-                                <div class="d_blue h w">
-
-                                </div>
-                            </div>
-                            <div id="b6" class="wrap_dot_medium">
-                                <div class="d_blue h w">
-
-                                </div>
-                            </div>
-
-                            <div id="c1" class="wrap_dot_medium">
-                                <div class="d_purple h w">
-
-                                </div>
-                            </div>
-                            <div id="c2" class="wrap_dot_medium">
-                                <div class="d_red h w">
-
-                                </div>
-                            </div>
-                            <div id="c3" class="wrap_dot_medium">
-                                <div class="d_purple h w">
-
-                                </div>
-                            </div>
-                            <div id="c4" class="wrap_dot_medium">
-                                <div class="d_yellow h w">
-
-                                </div>
-                            </div>
-                            <div id="c5" class="wrap_dot_medium">
-                                <div class="d_purple h w">
-
-                                </div>
-                            </div>
-                            <div id="c6" class="wrap_dot_medium">
-                                <div class="d_purple h w">
-
-                                </div>
-                            </div>
-
-                            <div id="d1" class="wrap_dot_medium">
-                                <div class="d_blue h w">
-
-                                </div>
-                            </div>
-                            <div id="d2" class="wrap_dot_medium">
-                                <div class="d_blue h w">
-
-                                </div>
-                            </div>
-                            <div id="d3" class="wrap_dot_medium">
-                                <div class="d_green h w">
-
-                                </div>
-                            </div>
-                            <div id="d4" class="wrap_dot_medium">
-                                <div class="d_blue h w">
-
-                                </div>
-                            </div>
-                            <div id="d5" class="wrap_dot_medium">
-                                <div class="d_green h w">
-
-                                </div>
-                            </div>
-                            <div id="d6" class="wrap_dot_medium">
-                                <div class="d_green h w">
-
-                                </div>
-                            </div>
-
-                            <div id="e1" class="wrap_dot_medium">
-                                <div class="d_purple h w">
-
-                                </div>
-                            </div>
-                            <div id="e2" class="wrap_dot_medium">
-                                <div class="d_yellow h w">
-
-                                </div>
-                            </div>
-                            <div id="e3" class="wrap_dot_medium">
-                                <div class="d_green h w">
-
-                                </div>
-                            </div>
-                            <div id="e4" class="wrap_dot_medium">
-                                <div class="d_yellow h w">
-
-                                </div>
-                            </div>
-                            <div id="e5" class="wrap_dot_medium">
-                                <div class="d_green h w">
-
-                                </div>
-                            </div>
-                            <div id="e6" class="wrap_dot_medium">
-                                <div class="d_yellow h w">
-
-                                </div>
-                            </div>
-
-                            <div id="f1" class="wrap_dot_medium">
-                                <div class="d_red h w">
-
-                                </div>
-                            </div>
-                            <div id="f2" class="wrap_dot_medium">
-                                <div class="d_red h w">
-
-                                </div>
-                            </div>
-                            <div id="f3" class="wrap_dot_medium">
-                                <div class="d_green h w">
-
-                                </div>
-                            </div>
-                            <div id="f4" class="wrap_dot_medium">
-                                <div class="d_yellow h w">
-
-                                </div>
-                            </div>
-                            <div id="f5" class="wrap_dot_medium">
-                                <div class="d_green h w">
-
-                                </div>
-                            </div>
-                            <div id="f6" class="wrap_dot_medium">
-                                <div class="d_purple h w">
-
-                                </div>
-                            </div>
-
-                        </div>
-                        <div id="tab_3" class="level_hard tabs__block">
-
-                            <div id="a1" class="wrap_dot_hard">
-                                <div class="d_red h w">
-
-                                </div>
-                            </div>
-                            <div id="a2" class="wrap_dot_hard">
-                                <div class="d_red h w">
-
-                                </div>
-                            </div>
-                            <div id="a3" class="wrap_dot_hard">
-                                <div class="d_green h w">
-
-                                </div>
-                            </div>
-                            <div id="a4" class="wrap_dot_hard">
-                                <div class="d_yellow h w">
-
-                                </div>
-                            </div>
-                            <div id="a5" class="wrap_dot_hard">
-                                <div class="d_green h w">
-
-                                </div>
-                            </div>
-                            <div id="a6" class="wrap_dot_hard">
-                                <div class="d_purple h w">
-
-                                </div>
-                            </div>
-                            <div id="a7" class="wrap_dot_hard">
-                                <div class="d_purple h w">
-
-                                </div>
-                            </div>
-                            <div id="a8" class="wrap_dot_hard">
-                                <div class="d_purple h w">
-
-                                </div>
-                            </div>
-
-                            <div id="b1" class="wrap_dot_hard">
-                                <div class="d_green h w">
-
-                                </div>
-                            </div>
-                            <div id="b2" class="wrap_dot_hard">
-                                <div class="d_red h w">
-
-                                </div>
-                            </div>
-                            <div id="b3" class="wrap_dot_hard">
-                                <div class="d_green h w">
-
-                                </div>
-                            </div>
-                            <div id="b4" class="wrap_dot_hard">
-                                <div class="d_purple h w">
-
-                                </div>
-                            </div>
-                            <div id="b5" class="wrap_dot_hard">
-                                <div class="d_green h w">
-
-                                </div>
-                            </div>
-                            <div id="b6" class="wrap_dot_hard">
-                                <div class="d_red h w">
-
-                                </div>
-                            </div>
-                            <div id="b7" class="wrap_dot_hard">
-                                <div class="d_green h w">
-
-                                </div>
-                            </div>
-                            <div id="b8" class="wrap_dot_hard">
-                                <div class="d_purple h w">
-
-                                </div>
-                            </div>
-
-                            <div id="c1" class="wrap_dot_hard">
-                                <div class="d_purple h w">
-
-                                </div>
-                            </div>
-                            <div id="c2" class="wrap_dot_hard">
-                                <div class="d_blue h w">
-
-                                </div>
-                            </div>
-                            <div id="c3" class="wrap_dot_hard">
-                                <div class="d_yellow h w">
-
-                                </div>
-                            </div>
-                            <div id="c4" class="wrap_dot_hard">
-                                <div class="d_green h w">
-
-                                </div>
-                            </div>
-                            <div id="c5" class="wrap_dot_hard">
-                                <div class="d_red h w">
-
-                                </div>
-                            </div>
-                            <div id="c6" class="wrap_dot_hard">
-                                <div class="d_purple h w">
-
-                                </div>
-                            </div>
-                            <div id="c7" class="wrap_dot_hard">
-                                <div class="d_blue h w">
-
-                                </div>
-                            </div>
-                            <div id="c8" class="wrap_dot_hard">
-                                <div class="d_yellow h w">
-
-                                </div>
-                            </div>
-
-                            <div id="d1" class="wrap_dot_hard">
-                                <div class="d_green h w">
-
-                                </div>
-                            </div>
-                            <div id="d2" class="wrap_dot_hard">
-                                <div class="d_green h w">
-
-                                </div>
-                            </div>
-                            <div id="d3" class="wrap_dot_hard">
-                                <div class="d_yellow h w">
-
-                                </div>
-                            </div>
-                            <div id="d4" class="wrap_dot_hard">
-                                <div class="d_yellow h w">
-
-                                </div>
-                            </div>
-                            <div id="d5" class="wrap_dot_hard">
-                                <div class="d_blue h w">
-
-                                </div>
-                            </div>
-                            <div id="d6" class="wrap_dot_hard">
-                                <div class="d_blue h w">
-
-                                </div>
-                            </div>
-                            <div id="d7" class="wrap_dot_hard">
-                                <div class="d_red h w">
-
-                                </div>
-                            </div>
-                            <div id="d8" class="wrap_dot_hard">
-                                <div class="d_red h w">
-
-                                </div>
-                            </div>
-
-                            <div id="e1" class="wrap_dot_hard">
-                                <div class="d_red h w">
-
-                                </div>
-                            </div>
-                            <div id="e2" class="wrap_dot_hard">
-                                <div class="d_red h w">
-
-                                </div>
-                            </div>
-                            <div id="e3" class="wrap_dot_hard">
-                                <div class="d_green h w">
-
-                                </div>
-                            </div>
-                            <div id="e4" class="wrap_dot_hard">
-                                <div class="d_yellow h w">
-
-                                </div>
-                            </div>
-                            <div id="e5" class="wrap_dot_hard">
-                                <div class="d_green h w">
-
-                                </div>
-                            </div>
-                            <div id="e6" class="wrap_dot_hard">
-                                <div class="d_purple h w">
-
-                                </div>
-                            </div>
-                            <div id="e7" class="wrap_dot_hard">
-                                <div class="d_purple h w">
-
-                                </div>
-                            </div>
-                            <div id="e8" class="wrap_dot_hard">
-                                <div class="d_purple h w">
-
-                                </div>
-                            </div>
-
-                            <div id="f1" class="wrap_dot_hard">
-                                <div class="d_green h w">
-
-                                </div>
-                            </div>
-                            <div id="f2" class="wrap_dot_hard">
-                                <div class="d_red h w">
-
-                                </div>
-                            </div>
-                            <div id="f3" class="wrap_dot_hard">
-                                <div class="d_green h w">
-
-                                </div>
-                            </div>
-                            <div id="f4" class="wrap_dot_hard">
-                                <div class="d_purple h w">
-
-                                </div>
-                            </div>
-                            <div id="f5" class="wrap_dot_hard">
-                                <div class="d_green h w">
-
-                                </div>
-                            </div>
-                            <div id="f6" class="wrap_dot_hard">
-                                <div class="d_red h w">
-
-                                </div>
-                            </div>
-                            <div id="f7" class="wrap_dot_hard">
-                                <div class="d_green h w">
-
-                                </div>
-                            </div>
-                            <div id="f8" class="wrap_dot_hard">
-                                <div class="d_purple h w">
-
-                                </div>
-                            </div>
-
-                            <div id="g1" class="wrap_dot_hard">
-                                <div class="d_purple h w">
-
-                                </div>
-                            </div>
-                            <div id="g2" class="wrap_dot_hard">
-                                <div class="d_blue h w">
-
-                                </div>
-                            </div>
-                            <div id="g3" class="wrap_dot_hard">
-                                <div class="d_yellow h w">
-
-                                </div>
-                            </div>
-                            <div id="g4" class="wrap_dot_hard">
-                                <div class="d_green h w">
-
-                                </div>
-                            </div>
-                            <div id="g5" class="wrap_dot_hard">
-                                <div class="d_red h w">
-
-                                </div>
-                            </div>
-                            <div id="g6" class="wrap_dot_hard">
-                                <div class="d_purple h w">
-
-                                </div>
-                            </div>
-                            <div id="g7" class="wrap_dot_hard">
-                                <div class="d_blue h w">
-
-                                </div>
-                            </div>
-                            <div id="g8" class="wrap_dot_hard">
-                                <div class="d_yellow h w">
-
-                                </div>
-                            </div>
-
-                            <div id="h1" class="wrap_dot_hard">
-                                <div class="d_green h w">
-
-                                </div>
-                            </div>
-                            <div id="h2" class="wrap_dot_hard">
-                                <div class="d_green h w">
-
-                                </div>
-                            </div>
-                            <div id="h3" class="wrap_dot_hard">
-                                <div class="d_yellow h w">
-
-                                </div>
-                            </div>
-                            <div id="h4" class="wrap_dot_hard">
-                                <div class="d_yellow h w">
-
-                                </div>
-                            </div>
-                            <div id="h5" class="wrap_dot_hard">
-                                <div class="d_blue h w">
-
-                                </div>
-                            </div>
-                            <div id="h6" class="wrap_dot_hard">
-                                <div class="d_blue h w">
-
-                                </div>
-                            </div>
-                            <div id="h7" class="wrap_dot_hard">
-                                <div class="d_red h w">
-
-                                </div>
-                            </div>
-                            <div id="h8" class="wrap_dot_hard">
-                                <div class="d_red h w">
-
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
+            <div class="f gap8 _f_ _br32 pad16 w background f_auto _b_all">
 
                 <!--очки / score / рейтинг-->
-                <div class="f fac f_f">
+                <div class="f fc f_f fac _b_r_grey pad16r">
                     <h2 class="f">
                         Score: 0
                     </h2>
+                    <!--кнопка принятия-->
+                    <div class="f _f_">
+                        <button id="send_result" type="button" class="w _t_ pad16r pad16l pad8t pad8b _br32 b6 c5" onclick="sendDots();">
+                            Get
+                        </button>
+                    </div>
                     <span id="time_game" class="time_game f">
                         05:00
                     </span>
                 </div>
+                <div>
+                    <!--уровень сложности / сложность / level-->
+                    <!--изменено 1.2 начало-->
+                    <div class="w">
+                        <div id="level_form" class="f fac gap8 _f_">
+                            <button type="button" onclick="showTab('tab_1', this)" class="fs16 pad8t pad8b pad16l pad16r _br32 BIG" data-tab="tab_1">Beginner</button>
+                            <button type="button" onclick="showTab('tab_2', this)" class="fs16 pad8t pad8b pad16l pad16r _br32 BIG" data-tab="tab_2">Medium</button>
+                            <button type="button" onclick="showTab('tab_3', this)" class="fs16 pad8t pad8b pad16l pad16r _br32 BIG" data-tab="tab_3">Hard</button>
+                        </div>
+                    </div>
+                    <!--изменено 1.2 конец-->
+                    <!--игра-->
+                    <div class="w f_auto h">
+                        <div class="f fac _f_ h">
+                            <div id="tab_1" class="level_beginner tabs__block">
+                                <div id="a1" class="wrap_dot_beginner">
+                                    <div class="d_red dot">
+
+                                    </div>
+                                </div>
+                                <div id="a2" class="wrap_dot_beginner">
+                                    <div class="d_red dot">
+
+                                    </div>
+                                </div>
+                                <div id="a3" class="wrap_dot_beginner">
+                                    <div class="d_green dot">
+
+                                    </div>
+                                </div>
+                                <div id="a4" class="wrap_dot_beginner">
+                                    <div class="d_yellow dot">
+
+                                    </div>
+                                </div>
+                                <div id="b1" class="wrap_dot_beginner">
+                                    <div class="d_green dot">
+
+                                    </div>
+                                </div>
+                                <div id="b2" class="wrap_dot_beginner">
+                                    <div class="d_purple dot">
+
+                                    </div>
+                                </div>
+                                <div id="b3" class="wrap_dot_beginner">
+                                    <div class="d_yellow dot">
+
+                                    </div>
+                                </div>
+                                <div id="b4" class="wrap_dot_beginner">
+                                    <div class="d_blue dot">
+
+                                    </div>
+                                </div>
+                                <div id="c1" class="wrap_dot_beginner">
+                                    <div class="d_purple dot">
+
+                                    </div>
+                                </div>
+                                <div id="c2" class="wrap_dot_beginner">
+                                    <div class="d_blue dot">
+
+                                    </div>
+                                </div>
+                                <div id="c3" class="wrap_dot_beginner">
+                                    <div class="d_red dot">
+
+                                    </div>
+                                </div>
+                                <div id="c4" class="wrap_dot_beginner">
+                                    <div class="d_purple h w _br50 dot">
+
+                                    </div>
+                                </div>
+                                <div id="d1" class="wrap_dot_beginner">
+                                    <div class="d_red dot">
+
+                                    </div>
+                                </div>
+                                <div id="d2" class="wrap_dot_beginner">
+                                    <div class="d_red dot">
+
+                                    </div>
+                                </div>
+                                <div id="d3" class="wrap_dot_beginner">
+                                    <div class="d_blue dot">
+
+                                    </div>
+                                </div>
+                                <div id="d4" class="wrap_dot_beginner">
+                                    <div class="d_blue dot">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tab_2" class="level_medium tabs__block">
+
+                                <div id="a1" class="wrap_dot_medium">
+                                    <div class="d_red dot">
+
+                                    </div>
+                                </div>
+                                <div id="a2" class="wrap_dot_medium">
+                                    <div class="d_red dot">
+
+                                    </div>
+                                </div>
+                                <div id="a3" class="wrap_dot_medium">
+                                    <div class="d_green dot">
+
+                                    </div>
+                                </div>
+                                <div id="a4" class="wrap_dot_medium">
+                                    <div class="d_yellow dot">
+
+                                    </div>
+                                </div>
+                                <div id="a5" class="wrap_dot_medium">
+                                    <div class="d_green dot">
+
+                                    </div>
+                                </div>
+                                <div id="a6" class="wrap_dot_medium">
+                                    <div class="d_purple dot">
+
+                                    </div>
+                                </div>
+
+                                <div id="b1" class="wrap_dot_medium">
+                                    <div class="d_green dot">
+
+                                    </div>
+                                </div>
+                                <div id="b2" class="wrap_dot_medium">
+                                    <div class="d_red dot">
+
+                                    </div>
+                                </div>
+                                <div id="b3" class="wrap_dot_medium">
+                                    <div class="d_green dot">
+
+                                    </div>
+                                </div>
+                                <div id="b4" class="wrap_dot_medium">
+                                    <div class="d_green dot">
+
+                                    </div>
+                                </div>
+                                <div id="b5" class="wrap_dot_medium">
+                                    <div class="d_blue dot">
+
+                                    </div>
+                                </div>
+                                <div id="b6" class="wrap_dot_medium">
+                                    <div class="d_blue dot">
+
+                                    </div>
+                                </div>
+
+                                <div id="c1" class="wrap_dot_medium">
+                                    <div class="d_purple dot">
+
+                                    </div>
+                                </div>
+                                <div id="c2" class="wrap_dot_medium">
+                                    <div class="d_red dot">
+
+                                    </div>
+                                </div>
+                                <div id="c3" class="wrap_dot_medium">
+                                    <div class="d_purple dot">
+
+                                    </div>
+                                </div>
+                                <div id="c4" class="wrap_dot_medium">
+                                    <div class="d_yellow dot">
+
+                                    </div>
+                                </div>
+                                <div id="c5" class="wrap_dot_medium">
+                                    <div class="d_purple dot">
+
+                                    </div>
+                                </div>
+                                <div id="c6" class="wrap_dot_medium">
+                                    <div class="d_purple dot">
+
+                                    </div>
+                                </div>
+
+                                <div id="d1" class="wrap_dot_medium">
+                                    <div class="d_blue dot">
+
+                                    </div>
+                                </div>
+                                <div id="d2" class="wrap_dot_medium">
+                                    <div class="d_blue dot">
+
+                                    </div>
+                                </div>
+                                <div id="d3" class="wrap_dot_medium">
+                                    <div class="d_green dot">
+
+                                    </div>
+                                </div>
+                                <div id="d4" class="wrap_dot_medium">
+                                    <div class="d_blue dot">
+
+                                    </div>
+                                </div>
+                                <div id="d5" class="wrap_dot_medium">
+                                    <div class="d_green dot">
+
+                                    </div>
+                                </div>
+                                <div id="d6" class="wrap_dot_medium">
+                                    <div class="d_green dot">
+
+                                    </div>
+                                </div>
+
+                                <div id="e1" class="wrap_dot_medium">
+                                    <div class="d_purple dot">
+
+                                    </div>
+                                </div>
+                                <div id="e2" class="wrap_dot_medium">
+                                    <div class="d_yellow dot">
+
+                                    </div>
+                                </div>
+                                <div id="e3" class="wrap_dot_medium">
+                                    <div class="d_green dot">
+
+                                    </div>
+                                </div>
+                                <div id="e4" class="wrap_dot_medium">
+                                    <div class="d_yellow dot">
+
+                                    </div>
+                                </div>
+                                <div id="e5" class="wrap_dot_medium">
+                                    <div class="d_green dot">
+
+                                    </div>
+                                </div>
+                                <div id="e6" class="wrap_dot_medium">
+                                    <div class="d_yellow dot">
+
+                                    </div>
+                                </div>
+
+                                <div id="f1" class="wrap_dot_medium">
+                                    <div class="d_red dot">
+
+                                    </div>
+                                </div>
+                                <div id="f2" class="wrap_dot_medium">
+                                    <div class="d_red dot">
+
+                                    </div>
+                                </div>
+                                <div id="f3" class="wrap_dot_medium">
+                                    <div class="d_green dot">
+
+                                    </div>
+                                </div>
+                                <div id="f4" class="wrap_dot_medium">
+                                    <div class="d_yellow dot">
+
+                                    </div>
+                                </div>
+                                <div id="f5" class="wrap_dot_medium">
+                                    <div class="d_green dot">
+
+                                    </div>
+                                </div>
+                                <div id="f6" class="wrap_dot_medium">
+                                    <div class="d_purple dot">
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div id="tab_3" class="level_hard tabs__block">
+
+                                <div id="a1" class="wrap_dot_hard">
+                                    <div class="d_red dot">
+
+                                    </div>
+                                </div>
+                                <div id="a2" class="wrap_dot_hard">
+                                    <div class="d_red dot">
+
+                                    </div>
+                                </div>
+                                <div id="a3" class="wrap_dot_hard">
+                                    <div class="d_green dot">
+
+                                    </div>
+                                </div>
+                                <div id="a4" class="wrap_dot_hard">
+                                    <div class="d_yellow dot">
+
+                                    </div>
+                                </div>
+                                <div id="a5" class="wrap_dot_hard">
+                                    <div class="d_green dot">
+
+                                    </div>
+                                </div>
+                                <div id="a6" class="wrap_dot_hard">
+                                    <div class="d_purple dot">
+
+                                    </div>
+                                </div>
+                                <div id="a7" class="wrap_dot_hard">
+                                    <div class="d_purple dot">
+
+                                    </div>
+                                </div>
+                                <div id="a8" class="wrap_dot_hard">
+                                    <div class="d_purple dot">
+
+                                    </div>
+                                </div>
+
+                                <div id="b1" class="wrap_dot_hard">
+                                    <div class="d_green dot">
+
+                                    </div>
+                                </div>
+                                <div id="b2" class="wrap_dot_hard">
+                                    <div class="d_red dot">
+
+                                    </div>
+                                </div>
+                                <div id="b3" class="wrap_dot_hard">
+                                    <div class="d_green dot">
+
+                                    </div>
+                                </div>
+                                <div id="b4" class="wrap_dot_hard">
+                                    <div class="d_purple dot">
+
+                                    </div>
+                                </div>
+                                <div id="b5" class="wrap_dot_hard">
+                                    <div class="d_green dot">
+
+                                    </div>
+                                </div>
+                                <div id="b6" class="wrap_dot_hard">
+                                    <div class="d_red dot">
+
+                                    </div>
+                                </div>
+                                <div id="b7" class="wrap_dot_hard">
+                                    <div class="d_green dot">
+
+                                    </div>
+                                </div>
+                                <div id="b8" class="wrap_dot_hard">
+                                    <div class="d_purple dot">
+
+                                    </div>
+                                </div>
+
+                                <div id="c1" class="wrap_dot_hard">
+                                    <div class="d_purple dot">
+
+                                    </div>
+                                </div>
+                                <div id="c2" class="wrap_dot_hard">
+                                    <div class="d_blue dot">
+
+                                    </div>
+                                </div>
+                                <div id="c3" class="wrap_dot_hard">
+                                    <div class="d_yellow dot">
+
+                                    </div>
+                                </div>
+                                <div id="c4" class="wrap_dot_hard">
+                                    <div class="d_green dot">
+
+                                    </div>
+                                </div>
+                                <div id="c5" class="wrap_dot_hard">
+                                    <div class="d_red dot">
+
+                                    </div>
+                                </div>
+                                <div id="c6" class="wrap_dot_hard">
+                                    <div class="d_purple dot">
+
+                                    </div>
+                                </div>
+                                <div id="c7" class="wrap_dot_hard">
+                                    <div class="d_blue dot">
+
+                                    </div>
+                                </div>
+                                <div id="c8" class="wrap_dot_hard">
+                                    <div class="d_yellow dot">
+
+                                    </div>
+                                </div>
+
+                                <div id="d1" class="wrap_dot_hard">
+                                    <div class="d_green dot">
+
+                                    </div>
+                                </div>
+                                <div id="d2" class="wrap_dot_hard">
+                                    <div class="d_green dot">
+
+                                    </div>
+                                </div>
+                                <div id="d3" class="wrap_dot_hard">
+                                    <div class="d_yellow dot">
+
+                                    </div>
+                                </div>
+                                <div id="d4" class="wrap_dot_hard">
+                                    <div class="d_yellow dot">
+
+                                    </div>
+                                </div>
+                                <div id="d5" class="wrap_dot_hard">
+                                    <div class="d_blue dot">
+
+                                    </div>
+                                </div>
+                                <div id="d6" class="wrap_dot_hard">
+                                    <div class="d_blue dot">
+
+                                    </div>
+                                </div>
+                                <div id="d7" class="wrap_dot_hard">
+                                    <div class="d_red dot">
+
+                                    </div>
+                                </div>
+                                <div id="d8" class="wrap_dot_hard">
+                                    <div class="d_red dot">
+
+                                    </div>
+                                </div>
+
+                                <div id="e1" class="wrap_dot_hard">
+                                    <div class="d_red dot">
+
+                                    </div>
+                                </div>
+                                <div id="e2" class="wrap_dot_hard">
+                                    <div class="d_red dot">
+
+                                    </div>
+                                </div>
+                                <div id="e3" class="wrap_dot_hard">
+                                    <div class="d_green dot">
+
+                                    </div>
+                                </div>
+                                <div id="e4" class="wrap_dot_hard">
+                                    <div class="d_yellow dot">
+
+                                    </div>
+                                </div>
+                                <div id="e5" class="wrap_dot_hard">
+                                    <div class="d_green dot">
+
+                                    </div>
+                                </div>
+                                <div id="e6" class="wrap_dot_hard">
+                                    <div class="d_purple dot">
+
+                                    </div>
+                                </div>
+                                <div id="e7" class="wrap_dot_hard">
+                                    <div class="d_purple dot">
+
+                                    </div>
+                                </div>
+                                <div id="e8" class="wrap_dot_hard">
+                                    <div class="d_purple dot">
+
+                                    </div>
+                                </div>
+
+                                <div id="f1" class="wrap_dot_hard">
+                                    <div class="d_green dot">
+
+                                    </div>
+                                </div>
+                                <div id="f2" class="wrap_dot_hard">
+                                    <div class="d_red dot">
+
+                                    </div>
+                                </div>
+                                <div id="f3" class="wrap_dot_hard">
+                                    <div class="d_green dot">
+
+                                    </div>
+                                </div>
+                                <div id="f4" class="wrap_dot_hard">
+                                    <div class="d_purple dot">
+
+                                    </div>
+                                </div>
+                                <div id="f5" class="wrap_dot_hard">
+                                    <div class="d_green dot">
+
+                                    </div>
+                                </div>
+                                <div id="f6" class="wrap_dot_hard">
+                                    <div class="d_red dot">
+
+                                    </div>
+                                </div>
+                                <div id="f7" class="wrap_dot_hard">
+                                    <div class="d_green dot">
+
+                                    </div>
+                                </div>
+                                <div id="f8" class="wrap_dot_hard">
+                                    <div class="d_purple dot">
+
+                                    </div>
+                                </div>
+
+                                <div id="g1" class="wrap_dot_hard">
+                                    <div class="d_purple dot">
+
+                                    </div>
+                                </div>
+                                <div id="g2" class="wrap_dot_hard">
+                                    <div class="d_blue dot">
+
+                                    </div>
+                                </div>
+                                <div id="g3" class="wrap_dot_hard">
+                                    <div class="d_yellow dot">
+
+                                    </div>
+                                </div>
+                                <div id="g4" class="wrap_dot_hard">
+                                    <div class="d_green dot">
+
+                                    </div>
+                                </div>
+                                <div id="g5" class="wrap_dot_hard">
+                                    <div class="d_red dot">
+
+                                    </div>
+                                </div>
+                                <div id="g6" class="wrap_dot_hard">
+                                    <div class="d_purple dot">
+
+                                    </div>
+                                </div>
+                                <div id="g7" class="wrap_dot_hard">
+                                    <div class="d_blue dot">
+
+                                    </div>
+                                </div>
+                                <div id="g8" class="wrap_dot_hard">
+                                    <div class="d_yellow dot">
+
+                                    </div>
+                                </div>
+
+                                <div id="h1" class="wrap_dot_hard">
+                                    <div class="d_green dot">
+
+                                    </div>
+                                </div>
+                                <div id="h2" class="wrap_dot_hard">
+                                    <div class="d_green dot">
+
+                                    </div>
+                                </div>
+                                <div id="h3" class="wrap_dot_hard">
+                                    <div class="d_yellow dot">
+
+                                    </div>
+                                </div>
+                                <div id="h4" class="wrap_dot_hard">
+                                    <div class="d_yellow dot">
+
+                                    </div>
+                                </div>
+                                <div id="h5" class="wrap_dot_hard">
+                                    <div class="d_blue dot">
+
+                                    </div>
+                                </div>
+                                <div id="h6" class="wrap_dot_hard">
+                                    <div class="d_blue dot">
+
+                                    </div>
+                                </div>
+                                <div id="h7" class="wrap_dot_hard">
+                                    <div class="d_red dot">
+
+                                    </div>
+                                </div>
+                                <div id="h8" class="wrap_dot_hard">
+                                    <div class="d_red dot">
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
             <!--топ 10 игроков-->
             <div class="f fc gap8 f_f _br32 pad16 w background _b_all gap16">
@@ -876,15 +880,15 @@
             </div>
 
             <!--форма добавления комментария /комментарий/comments/чат-->
-            <form action="" method="post" class="f f_f gap8 pad32t pad32b pad4l pad4r">
+            <div class="f f_f gap8 pad32t pad32b pad4l pad4r">
                 <input type="text" class="w background" placeholder="Your comment....">
                 <button type="submit">
                     <img src="images/send.svg" alt="">
                 </button>
-            </form>
+            </div>
 
             <!--форма обновления/обновление комментариев /комментарий/-->
-            <form action="" method="post" class="f _f_"  id="browse_latest">
+            <div class="f _f_"  id="browse_latest">
                 <button type="submit" class="f f_f _b_b_blue gap4">
                         <span class="c6">
                             Browse latest
@@ -893,13 +897,16 @@
                         <img src="images/clock.svg" alt="">
                     </soan>
                 </button>
-            </form>
+            </div>
 
         </div>
     </div>
     <!--end body-->
     <script src="js/script.js"></script>
     <script src="js/dots.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/game_level.js"></script>
+    <script src="js/popup.js"></script>
 </div>
 
 
